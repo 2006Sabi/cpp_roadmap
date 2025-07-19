@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Day C++ Learning Plan</title> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .roadmap-container {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .day-card {
+            background-color: #e0f2f7;  
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            border-left: 8px solid;
+        }
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        .day-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #1e88e5;  
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .day-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #212121;
+        }
+        .day-content ul {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin-top: 10px;
+            color: #424242;
+        }
+        .day-content ul li {
+            margin-bottom: 5px;
+        } 
+        .day-card:nth-child(odd) { border-color: #42a5f5; }  
+        .day-card:nth-child(even) { border-color: #66bb6a; }  
+
+        @media (min-width: 768px) {
+            .grid-cols-10 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .day-card {
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid-cols-10 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="roadmap-container">
+        <div class="flex items-center justify-center mb-10">
+            <span class="text-3xl font-extrabold text-blue-800 mr-3">C++</span>
+            <h1 class="text-4xl font-extrabold text-gray-800 text-center">10-Day Learning Plan</h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Day 1 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">1</div>
+                    <h2 class="day-title">Basic Syntax & I/O</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>#include, main(), cout, cin, return</li>
+                        <li>Data types: int, float, char, bool</li>
+                        <li>if-else, switch, ternary</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">2</div>
+                    <h2 class="day-title">Loops & Operators</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>for, while, do-while</li>
+                        <li>Arithmetic, logical, relational, assignment ops</li>
+                        <li>Practice: Number patterns, sum of digits</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">3</div>
+                    <h2 class="day-title">Arrays & Strings</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>1D arrays, basic string handling (char[], string)</li>
+                        <li>Loops with arrays</li>
+                        <li>Practice: Reverse array, frequency count</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">4</div>
+                    <h2 class="day-title">Functions</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>Function declaration & definition</li>
+                        <li>Call by value & reference</li>
+                        <li>Practice: Prime check, factorial, swap</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">5</div>
+                    <h2 class="day-title">Pointers & References</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>*, &, ->, nullptr</li>
+                        <li>Array and pointer relation</li>
+                        <li>Practice: Pointer swap, pointer arithmetic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">6</div>
+                    <h2 class="day-title">Structures & User-Defined Data</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>struct, nested struct</li>
+                        <li>typedef, enum</li>
+                        <li>Practice: Student records, employee data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 7 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">7</div>
+                    <h2 class="day-title">Object-Oriented Basics</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>class, object, public/private</li>
+                        <li>Member functions, constructors</li>
+                        <li>Practice: Bank account, rectangle class</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 8 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">8</div>
+                    <h2 class="day-title">Inheritance & Polymorphism</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>public, protected inheritance</li>
+                        <li>Function overriding, virtual functions</li>
+                        <li>Practice: Shape base class, derived triangle/circle</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 9 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">9</div>
+                    <h2 class="day-title">File Handling</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>File read/write (fstream, ifstream, ofstream)</li>
+                        <li>Practice: Write & read student marks to file</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 10 -->
+            <div class="day-card">
+                <div class="flex items-center mb-3">
+                    <div class="day-number">10</div>
+                    <h2 class="day-title">STL & Revision</h2>
+                </div>
+                <div class="day-content">
+                    <ul>
+                        <li>Vectors, Sets, Maps, Iterators</li>
+                        <li>Practice: Frequency counter with map</li>
+                        <li>Revise past programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

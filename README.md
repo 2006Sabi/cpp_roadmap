@@ -1,4 +1,4 @@
-                                                                          🔟 10-Day C++ Learning Plan
+                                                      🔟 10-Day C++ Learning Plan
 
 🗓️ Day 1: Basic Syntax & I/O
   #include, main(), cout, cin, return
